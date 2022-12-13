@@ -1,0 +1,174 @@
+body{
+/*  background-color: #66CCFF;*/
+  background-image: url("hinhnengogo.jpg");
+  font: 100%/125% "Times New Roman", sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10%;
+  margin-left: 5%;
+  padding: 0px;
+  color: white;
+
+}
+#header{
+  border: 2px solid darkgreen;
+  background-image: url("morgentau.jpg");
+  border-radius: 8px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+
+#header p{
+  color: #205AA7;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 10px;
+}
+.box {
+float: left;
+width: 140;
+height: 100px;
+border-radius: 8px;
+background-color: none;
+}
+.box img{
+margin-left: 0;
+z-index: 999;
+cursor: pointer;
+}
+#menubar{
+  color: red;
+  font-weight: 500;
+  z-index: 10000;
+  position: -webkit-sticky;
+  position: sticky;
+    top: 0;
+  margin-bottom: 10px;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: white;
+}
+
+#menubar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+#menubar li{
+  float: left;
+}
+
+#menubar li a{
+  display: block;
+  color: none;
+  text-align: center;
+  padding:14px 50px;
+  text-decoration: none;
+}
+
+#menubar li a:hover{
+  background-color: ;
+  opacity: 0.5;
+  color: #000000;
+  border-radius: 8px;
+}
+
+.container {
+   display: grid;
+   grid-template-rows: 30% 70%;
+   grid-template-columns: 10% 10% 40% 40%;
+   grid-template-areas:
+      "header header header header"
+      "main main sidebar sidebar"
+      "footer footer footer footer";
+   grid-gap: 20px;
+}
+#bot{
+  margin-top: 80%;
+}
+.child {
+  padding: 1px;
+} 
+.child-header {
+  grid-area: header;
+  margin: 10px;
+  padding: 0px;
+  width: 100%;
+  border-radius: 8px;
+}
+.child-main {
+   grid-area: main;
+
+}
+.child-sidebar {
+   grid-area: sidebar;
+}
+.child-footer {
+   grid-area: footer;
+}
+.wrapper {
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  top: 20;
+  bottom: 20;
+  left: 20;
+  right: 20;
+  display: flex;
+}
+
+.container {
+  flex: 1;
+  padding: 0 20px;
+}
+.container1 {
+  flex: 1;
+  padding: 20 0px;
+}
+.highcharts-figure,
+.highcharts-data-table table {
+  min-width: 10%;
+  max-width: 80%;
+  margin: 1em auto;
+}
+
+.highcharts-data-table table {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ebebeb;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+  padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
